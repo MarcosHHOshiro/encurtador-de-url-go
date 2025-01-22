@@ -18,6 +18,9 @@ Este projeto é uma API simples de encurtador de URLs construída em Go utilizan
 
 ## Endpoints
 
+### **GET** `/{code}`
+- **Descrição**: Redireciona para a URL original associada ao código curto fornecido.
+
 ### **POST** `/api`
 - **Descrição**: Encurta uma URL fornecida.
 - **Corpo da Requisição**:
@@ -30,6 +33,3 @@ Este projeto é uma API simples de encurtador de URLs construída em Go utilizan
   {
     "url": "https://example.com"
   }
-
-### **GET** `/{code}`
-- **Descrição**: Redireciona para a URL original associada ao código curto fornecido.
